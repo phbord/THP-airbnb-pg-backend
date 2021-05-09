@@ -165,6 +165,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    string_pattern (1.6.0)
     table_print (1.5.7)
     thor (1.1.0)
     thread_safe (0.3.6)
@@ -206,6 +207,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  string_pattern
   table_print
   turbolinks (~> 5)
   tzinfo-data

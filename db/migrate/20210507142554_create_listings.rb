@@ -3,7 +3,7 @@ class CreateListings < ActiveRecord::Migration[5.2]
     create_table :listings do |t|
       t.integer :available_beds
       t.integer :price
-      t.string :description
+      t.text :description
       t.boolean :has_wifi
       t.text :welcome_message
       t.belongs_to :administrator, index: true

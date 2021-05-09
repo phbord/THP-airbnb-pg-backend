@@ -1,4 +1,6 @@
 class Reservation < ApplicationRecord
+    validates :start_date, :end_date,
+        presence: true
     belongs_to :guest, class_name: 'User'
     belongs_to :listing
 

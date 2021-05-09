@@ -30,6 +30,21 @@ Things you may want to cover:
 
 |ACTION|COMMANDE|
 |:---|:---|
+|Afficher la table utilisateur|`tp User.all`|
+|Créer un utilisateur|`u=User.create(email: "ph@gmai.com", phone_number: "0133554433", description:"test")`|
+|Afficher une instance d'utilisateur|`tp u`|
+|Vérifier la relation d'un utilisateur avec ses listings|`User.new.listings`|
+|Afficher la table ville|`tp City.all`|
+|Créer une ville|`c=City.create(name:"Paris", zip_code:"75000")`|
+|Afficher une instance d'une ville|`tp c`|
+|Vérifier la relation d'une ville avec ses listings|`City.new.listings`|
+|Afficher la table |`tp Listing.all`|
+|Créer un listing|`l=Listing.create(available_beds:2, price:30, description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis fermentum libero, non volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.", has_wifi:true, welcome_message:"bienvenue", city_id:1, administrator_id:1)`|
+|Afficher une instance d'un listing|`tp l`|
+|Vérifier la relation d'un listing avec ses réservations|`Listing.new.reservations`|
+|Afficher la table réservation|`tp Reservation.all`|
+|Créer une réservation|`r=Reservation.create(start_date:"2021-03-10 12:00:00", end_date:"2021-03-20 12:00:00", guest_id:1, listing_id:1)`|
+|Afficher une instance d'une réservation|`tp r`|
 
 ## Base de données
 - `User` représente nos utilisateurs
