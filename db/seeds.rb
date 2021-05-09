@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
-require 'string_pattern'
 
 Faker::Config.locale = "fr"
 
