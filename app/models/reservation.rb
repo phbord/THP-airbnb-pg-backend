@@ -4,7 +4,7 @@ class Reservation < ApplicationRecord
     belongs_to :guest, class_name: 'User'
     belongs_to :listing
 
-    before_create :start_must_be_before_end
+    before_validation :start_must_be_before_end
 
     def get_duration
         res = self.end_date.to_i - self.start_date.to_i
